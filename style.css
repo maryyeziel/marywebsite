@@ -1,0 +1,235 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .project-thumbnail {
+    cursor: pointer;
+  }
+  
+  .project-thumbnail img {
+    width: 100%;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  /* Add these styles to your existing styles.css */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-content img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+  
+  .project-thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    position: relative;
+    animation: modal-open 0.5s ease;
+  }
+  
+  @keyframes modal-open {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .close:hover {
+    color: #333;
+  }
+  
+/* Add these styles to your existing styles.css */
+
+#case-studies {
+    padding: 20px;
+  }
+  
+  .case-study {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .case-study img {
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .case-study-info {
+    flex-grow: 1;
+  }
+  
+  .case-study button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .case-study button:hover {
+    background-color: #0056b3;
+  }
+  
+  #case-study-modal {
+    display: none;
+  }
+  
+  #case-study-modal .modal-content {
+    animation: modal-open 0.5s ease;
+  }
+  /* Add these styles to your existing styles.css */
+
+#filter-options {
+  margin-bottom: 20px;
+}
+
+#filter-options select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.project-thumbnail {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.hide {
+  display: none;
+}
+/* Add these styles to your existing styles.css */
+
+#banner {
+  text-align: center;
+}
+
+#banner img {
+  max-width: 100%;
+  height: auto;
+}
