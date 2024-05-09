@@ -1,130 +1,182 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
+
+    <!-- Navigation -->
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
     </nav>
-  </header>
 
-  <main>
+    <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>Welcome to my portfolio! I'm passionate about...</p>
-    </section>
-
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-thumbnail" onclick="openModal(1)">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
+        <div class="container">
+            <h2>About Me</h2>
+            <p></p>
+            </p>Hello! I'm [Mary], a<li><a href="#photography">Photography</a></li>
+            <li><a href="#videography">Videography</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#location">Location</a></li> passionate photographer with a keen eye for capturing moments that tell compelling stories. With [number] years of experience in the field, I specialize in [types of photography you specialize in, e.g., portrait, landscape, event, etc.].</p>
+            <p>Photography, for me, is more than just a profession; it's a way of life. I believe that every photograph has the power to evoke emotions, stir memories, and inspire change. Whether it's freezing a fleeting expression, documenting a breathtaking landscape, or immortalizing the joy of a special occasion, I strive to create images that resonate with authenticity and depth.</p>
+            <p>I approach each project with creativity, professionalism, and dedication, ensuring that my clients receive not just photographs, but timeless works of art that they can cherish for years to come. My goal is to exceed expectations and deliver stunning visuals that leave a lasting impression.</p>
         </div>
-        <div class="project-thumbnail" onclick="openModal(2)">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-        </div><section id="projects">
-  <h2>Projects</h2>
-  <div id="filter-options">
-    <label for="category">Filter by Category:</label>
-    <select id="category">
-      <option value="all">All</option>
-      <option value="web">Web Development</option>
-      <option value="mobile">Mobile Development</option>
-      <!-- Add more categories as needed -->
-    </select>
+    </section><section id="connections" class="channel">
+      <div class="container">
+          <h2>Connections</h2>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/your-profile" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+              <a href="https://twitter.com/your-profile" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+              <a href="https://www.instagram.com/your-profile" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+              <!-- Add more social media icons or contact information as needed -->
+          </div>
+      </div>
+  </section>
 
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Description of project 1</p>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Description of project 2</p>
-      </div>
-      <!-- Add more projects as needed -->
-    </section><section id="banner">
-      <img src="image/DSC0029.jpg" alt="Banner Image">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <!-- Your portfolio items go here -->
+        </div>
+
     </section>
+
     
-
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>...</li>
-      </ul>
-    </section>
-
-    <section id="case-studies">
-        <h2>Case Studies</h2>
-        <div class="case-study">
-          <img src="case-study1.jpg" alt="Case Study 1">
-          <div class="case-study-info">
-            <h3>Case Study 1</h3>
-            <p>Description of Case Study 1</p>
-            <button onclick="openCaseStudyModal(1)">View Details</button>
+<section id="case-studies">
+  <div class="container">
+      <h2>Case Studies</h2>
+      <div class="case-studies-grid">
+          <div class="case-study" onclick="openCaseStudy('case-study1')">
+              <img src="mary.jpg" alt="Case Study 1">
+              <h3>Case Study 1</h3>
           </div>
-        </div>
-        <div class="case-study">
-          <img src="case-study2.jpg" alt="Case Study 2">
-          <div class="case-study-info">
-            <h3>Case Study 2</h3>
-            <p>Description of Case Study 2</p>
-            <button onclick="openCaseStudyModal(2)">View Details</button>
+          <div class="case-study" onclick="openCaseStudy('case-study2')">
+              <img src="mary001.JPG" alt="Case Study 2">
+              <h3>Case Study 2</h3>
           </div>
-        </div>
-        <!-- Add more case studies as needed -->
-      </section>
-      
-
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-
-  </main> <!-- Modal -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-      <!-- Add more details about the project here -->
-    </div>
+          <!-- Add more case studies as needed -->
+      </div>
   </div>
+</section>
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <!-- Filter buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterPortfolio('all')">All</button>
+            <button onclick="filterPortfolio('portrait')">Portrait</button>
+            <button onclick="filterPortfolio('landscape')">Landscape</button>
+            <!-- Add more filter buttons as needed -->
+        </div>
+        <!-- Portfolio items -->
+        <div class="portfolio-grid">
+            <div class="portfolio-item portrait"
+              
+                <h3>Project 1</h3>
+            </div>
+            <div class="portfolio-item landscape">
+                <img src="kamom.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Case Study Modal -->
+<div id="case-study-modal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeCaseStudyModal()">&times;</span>
+      <div id="case-study-content"></div>
+  </div>
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2> <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="openModal('project1')">
+                <img src="aisha.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+            </div>
+            <div class="portfolio-item" onclick="openModal('project2')">
+                <img src="essy.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </div>
+            <form id="contact-form">
+                <input type="text" placeholder="Mary Yeziel" required>
+                <input type="email" placeholder="maryyeziel0@gmail" required>
+                <textarea placeholder="expect more on my website" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+  <section id="prompts" class="channel">
+        <div class="container">
+            <h2>Prompts</h2>
+            <button onclick="showAlert()">Show Alert</button>
+            <button onclick="showConfirm()">Show Confirm</button>
+            <button onclick="showPrompt()">Show Prompt</button>
+        </div>
+    </section> <section id="testimonials" class="channel">
+      <div class="container">
+          <h2>Testimonials</h2>
+          <div class="testimonial">
+              <blockquote>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+              </blockquote>
+              <p class="author">- John Doe</p>
+          </div>
+          <div class="testimonial">
+              <blockquote>
+                  "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              </blockquote>
+              <p class="author">- Jane Doe</p>
+          </div>
+          <!-- Add more testimonials as needed -->
+      </div>
+  </section>
 
 
 
-  <footer>
-    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <section id="endorsements" class="channel">
+        <div class="container">
+            <h2>Endorsements</h2>
+            <div class="endorsement">
+                <p>This is where you can display endorsements from influential individuals or organizations.</p>
+                <p class="endorser">- John Doe, CEO of Company X</p>
+            </div>
+            <div class="endorsement">
+                <p>Another endorsement goes here...</p>
+                <p class="endorser">- Jane Doe, Director of Organization Y</p>
+            </div>
+            <!-- Add more endorsements as needed -->
+        </div> <div class="main-content">
+          <h1>Welcome to My Portfolio</h1>
+          <p>This is where you can showcase your work and accomplishments.</p>
+      </div>
+
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
